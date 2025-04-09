@@ -63,7 +63,7 @@
   text-align: center;
 }
 
-.btn-Order .hero-button {
+.btn-Order .Order-btn {
   padding: 15px 30px;
   font-size: 1.2rem;
   background-color: #ff4d4d;
@@ -74,6 +74,90 @@
   transition: background-color 0.3s ease;
 }
 
-.btn-Order .hero-button:hover {
+.btn-Order .Order-btn:hover {
   background-color: #e03e3e;
 }
+
+/* css for order/form page */
+
+.form-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-bottom: 40px;
+}
+
+.order-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  filter: brightness(0.6);
+}
+
+.form-overlay {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-top: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff4d4d;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label,
+.input-group p {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.submit-btn {
+  background-color: #ff4d4d;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.submit-btn:hover {
+  background-color: #e03e3e;
+}
+
+/* so the category titles would stand out */
+.highlight {
+  color: #ff5733;
+}
+

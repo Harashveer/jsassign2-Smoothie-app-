@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>order</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="form-container">
+      <img
+        src="./img/formPage(bgimg).jpg"
+        alt="Smoothie Background"
+        class="order-bg"
+      />
+
+      <div class="form-overlay">
+        <h2 class="form-title">Customize Your Smoothie</h2>
+
+        <form id="smoothieForm">
+
+          <div class="input-group">
+            <label for="smoothieName"
+              ><span class="highlight">Smoothie Name (optional):</span></label
+            >
+            <input type="text" id="smoothieName" name="smoothieName" />
+          </div>
+
+          <div class="input-group">
+            <label for="milkType"
+              ><span class="highlight">Type of Milk:</span></label
+            >
+            <select id="milkType" name="milkType" required>
+              <option value="">-- Select Milk --</option>
+              <option value="Whole Milk">Whole Milk</option>
+              <option value="Almond Milk">Almond Milk</option>
+              <option value="Oat Milk">Oat Milk</option>
+              <option value="Soy Milk">Soy Milk</option>
+            </select>
+          </div>
+
+          <div class="input-group fruit-options">
+            <p><span class="highlight">Select up to 3 Fruits:</span></p>
+            <label
+              ><input type="checkbox" name="fruits" value="Strawberry" />
+              Strawberry</label
+            >
+            <label
+              ><input type="checkbox" name="fruits" value="Banana" />
+              Banana</label
+            >
+            <label
+              ><input type="checkbox" name="fruits" value="Mango" />
+              Mango</label
+            >
+            <label
+              ><input type="checkbox" name="fruits" value="Blueberry" />
+              Blueberry</label
+            >
+            <label
+              ><input type="checkbox" name="fruits" value="Pineapple" />
+              Pineapple</label
+            >
+          </div>
+
+          <div class="input-group">
+            <p><span class="highlight">Sweetener:</span></p>
+            <label
+              ><input type="radio" name="sweetener" value="Honey" required />
+              Honey</label
+            >
+            <label
+              ><input type="radio" name="sweetener" value="Sugar" />
+              Sugar</label
+            >
+            <label
+              ><input type="radio" name="sweetener" value="None" /> None</label
+            >
+          </div>
+
+          <div class="input-group add-ons-group">
+            <p><span class="highlight">Add-ons:</span></p>
+            <label
+              ><input type="checkbox" name="addons" value="Protein Powder" />
+              Protein Powder</label
+            >
+            <label
+              ><input type="checkbox" name="addons" value="Chia Seeds" /> Chia
+              Seeds</label
+            >
+            <label
+              ><input type="checkbox" name="addons" value="Peanut Butter" />
+              Peanut Butter</label
+            >
+            <label
+              ><input type="checkbox" name="addons" value="Flax Seeds" /> Flax
+              Seeds</label
+            >
+          </div>
+
+          <div class="input-group ice-cream-options">
+            <p><span class="highlight">Select Ice Cream Quantity:</span></p>
+            <label
+              ><input type="radio" name="icecream" value="2 Scoop" /> 2
+              Scoop</label
+            >
+            <label
+              ><input type="radio" name="icecream" value="3 Scoop" /> 3
+              Scoop</label
+            >
+            <label
+              ><input type="radio" name="icecream" value="4 Scoop" /> 4
+              Scoop</label
+            >
+          </div>
+
+          <div class="input-group">
+            <p><span class="highlight">Smoothie Size:</span></p>
+            <label
+              ><input type="radio" name="size" value="Small" required />
+              Small</label
+            >
+            <label
+              ><input type="radio" name="size" value="Medium" /> Medium</label
+            >
+            <label
+              ><input type="radio" name="size" value="Large" /> Large</label
+            >
+          </div>
+
+          <div class="input-group">
+            <button type="submit" class="submit-btn">Create Smoothie</button>
+          </div>
+        </form>
+
+        <div id="smoothieOutput" class="output-box"></div>
+      </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
